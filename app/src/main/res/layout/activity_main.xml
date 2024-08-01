@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightPink"
+    tools:context=".MainActivity">
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="220dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="70dp"
+        android:id="@+id/ivMain"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:text="Second Activity"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:elevation="4dp"
+        android:textAllCaps="false"
+        android:background="@color/lightBlue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="340dp"
+        android:gravity="center"
+        android:id="@+id/btnSecondActivity"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:text="Third Activity"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:elevation="8dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:background="@color/lightBlue"
+        app:layout_constraintStart_toStartOf="@id/btnSecondActivity"
+        app:layout_constraintEnd_toEndOf="@id/btnSecondActivity"
+        app:layout_constraintTop_toBottomOf="@id/btnSecondActivity"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:id="@+id/btnThirdActivity"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
